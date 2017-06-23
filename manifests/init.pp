@@ -70,7 +70,7 @@ class kapacitor (
   $template_kapacitor_conf = 'kapacitor/kapacitor.conf.erb',
   $dependency_class        = $::kapacitor::params::dependency_class,
   $my_class                = $::kapacitor::params::my_class,
-  $noops                   = false,
+  $noops                   = undef,
   $manage_user             = $::kapacitor::params::manage_user,
   $manage_sys              = $::kapacitor::params::manage_sys,
 ) inherits kapacitor::params {
